@@ -9582,3 +9582,38 @@ a.text-dark:hover, a.text-dark:focus {
     transform: translateY(-15px);
   }
 }
+/* Contenedor del logo */
+.header-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Logo */
+.header-logo img {
+    height: 50px; /* tamaño ideal para desktop */
+    width: auto;
+    margin-right: 10px;
+    display: block;
+}
+
+/* Título al lado del logo */
+.header-logo h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Ajuste para pantallas móviles */
+@media (max-width: 767px) {
+    .header-logo img {
+        height: 35px; /* más pequeño para móviles */
+        margin-right: 8px;
+    }
+
+    .header-logo h1 {
+        font-size: 1rem; /* texto más pequeño en móvil */
+    }
+}
+
+
