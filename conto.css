@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === PALETA ===
+   Rosa pastel: #f9c5d1
+   Rosa fuerte: #e47b94
+   Piel claro: #ffe8d6
+   Piel medio: #fcd5b5
+   Texto suave: #4b3b3b
+   Texto oscuro: #2c2c2c
+*/
+
+/* === HEADER === */
+.header-contacto {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(230, 204, 210, 0.8)),
+              url('img/contacto-header.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  border-bottom: 5px solid #ffe8d6;
+}
+
+.header-contacto h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.header-contacto p {
+  font-size: 20px;
+  font-weight: 300;
+  .header-contacto {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  padding: 20px;
+}
+
+.header-contacto .logo-contacto {
+  width: 60px; 
+  height: auto;
+}
+
+.header-contacto .header-texto h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header-contacto .header-texto p {
+  margin: 5px 0 0 0;
+}
+
+}
+
+/* === SECCIÓN INFORMACIÓN DE EMPRESA === */
+.info-empresa {
+  padding: 80px 10%;
+  background-color: #fff4f6;
+}
+
+.info-empresa .info-box {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.info-empresa .info-box h2 {
+  font-size: 38px;
+  color: #D19C97;
+  margin-bottom: 20px;
+}
+
+.info-empresa .info-box p {
+  font-size: 18px;
+  color: #4b3b3b;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 35px;
+}
+
+.info-item {
+  background: #ffe8d6;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(228, 123, 148, 0.3);
+}
+
+.info-item h3 {
+  color: #2c2c2c;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.info-item p {
+  color: #4b3b3b;
+  font-size: 16px;
+}
+
+/* === FORMULARIO DE CONTACTO === */
+.formulario-contacto {
+  padding: 80px 10%;
+  text-align: center;
+  background: #fff;
+}
+
+.formulario-contacto h2 {
+  font-size: 34px;
+  color: #e47b94;
+  margin-bottom: 40px;
+}
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-grupo {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2c2c2c;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #f9c5d1;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #D19C97;
+  box-shadow: 0 0 8px rgba(228, 123, 148, 0.4);
+  outline: none;
+}
+
+.btn-enviar {
+  display: block;
+  width: 100%;
+  background: linear-gradient(90deg, #e47b94, #f9c5d1);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn-enviar:hover {
+  background: linear-gradient(90deg, #f9c5d1, #e47b94);
+  transform: scale(1.05);
+}
+
+.confirmacion {
+  margin-top: 20px;
+  color: #D19C97;
+  font-weight: bold;
+  display: none;
+}
+
+/* === MAPA === */
+.mapa {
+  padding: 80px 10%;
+  background: #fff4f6;
+  text-align: center;
+}
+
+.mapa h2 {
+  font-size: 32px;
+  color: #D19C97;
+  margin-bottom: 30px;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #222;
+  color: #4b3b3b;
+  text-align: center;
+  padding: 35px 20px;
+  font-size: 14px;
+  border-top: 3px solid #D19C97;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 800px) {
+  .header-contacto h1 {
+    font-size: 42px;
+  }
+
+  .header-contacto p {
+    font-size: 17px;
+  }
+
+  .formulario-contacto h2,
+  .mapa h2,
+  .info-empresa .info-box h2 {
+    font-size: 28px;
+  }
+
+  .info-grid {
+    gap: 25px;
+  }
+}
+.contact-section {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #222;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #444;
+}
